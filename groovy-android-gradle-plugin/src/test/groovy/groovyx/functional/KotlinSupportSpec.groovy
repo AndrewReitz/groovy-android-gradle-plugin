@@ -209,6 +209,7 @@ class KotlinSupportSpec extends AndroidFunctionalSpec {
     """
 
     when:
+    copyTestDir()
     run 'assemble', 'test'
 
     then:
