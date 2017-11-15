@@ -126,14 +126,9 @@ class FullCompilationSpec extends AndroidFunctionalSpec {
     where:
     // test common configs that touches the different way to access the classpath
     javaVersion                     | _androidPluginVersion | gradleVersion
-    'JavaVersion.VERSION_1_7'       | '2.2.0'              | '3.0'
-    'JavaVersion.VERSION_1_7'       | '2.2.0'              | '3.1'
-    'JavaVersion.VERSION_1_6'       | '2.2.3'              | '3.2'
-    'JavaVersion.VERSION_1_7'       | '2.3.0'              | '3.3'
-    'JavaVersion.VERSION_1_7'       | '2.3.0'              | '3.4'
-    'JavaVersion.VERSION_1_7'       | '2.3.1'              | '3.5'
-    'JavaVersion.VERSION_1_7'       | '2.3.2'              | '3.5'
-    'JavaVersion.VERSION_1_7'       | '2.3.3'              | '4.2'
+    'JavaVersion.VERSION_1_7'       | '3.0.0'              | '4.2'
+    'JavaVersion.VERSION_1_8'       | '3.0.0'              | '4.2.1'
+    'JavaVersion.VERSION_1_8'       | '3.0.0'              | '4.3'
   }
 
   @Unroll
@@ -285,19 +280,8 @@ class FullCompilationSpec extends AndroidFunctionalSpec {
     where:
     // test common configs that touches the different way to access the classpath
     javaVersion                     | _androidPluginVersion | gradleVersion
-    'JavaVersion.VERSION_1_6'       | '1.5.0'              | '2.10'
-    'JavaVersion.VERSION_1_7'       | '1.5.0'              | '2.11'
-    'JavaVersion.VERSION_1_7'       | '1.5.0'              | '2.12'
-    'JavaVersion.VERSION_1_7'       | '2.0.0'              | '2.13'
-    'JavaVersion.VERSION_1_7'       | '2.1.2'              | '2.14'
-    'JavaVersion.VERSION_1_7'       | '2.2.0'              | '2.14.1'
-    'JavaVersion.VERSION_1_7'       | '2.2.0'              | '3.0'
-    'JavaVersion.VERSION_1_7'       | '2.2.0'              | '3.1'
-    'JavaVersion.VERSION_1_6'       | '2.2.3'              | '3.2'
-    'JavaVersion.VERSION_1_7'       | '2.3.0'              | '3.3'
-    'JavaVersion.VERSION_1_7'       | '2.3.0'              | '3.4'
-    'JavaVersion.VERSION_1_7'       | '2.3.1'              | '3.5'
-    'JavaVersion.VERSION_1_7'       | '2.3.1'              | '3.5'
-    'JavaVersion.VERSION_1_7'       | '2.3.3'              | '4.2'
+    'JavaVersion.VERSION_1_7'       | '3.0.0'              | '4.2'
+    'JavaVersion.VERSION_1_8'       | '3.0.0'              | '4.2.1'
+    'JavaVersion.VERSION_1_8'       | '3.0.0'              | '4.3'
   }
 }

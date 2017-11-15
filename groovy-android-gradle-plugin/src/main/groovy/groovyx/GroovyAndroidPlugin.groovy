@@ -218,8 +218,15 @@ class GroovyAndroidPlugin implements Plugin<Project> {
   }
 
   private static List<String> getJavaTaskCompilerArgs(JavaCompile javaTask) {
-    log.debug('javaTask.options.compilerArgs = {}', javaTask.options.compilerArgs)
-    return javaTask.options.compilerArgs
+    def compilerArgs = javaTask.options.compilerArgs
+    log.debug('javaTask.options.compilerArgs = {}', compilerArgs)
+
+    // if we skip java c the java compiler will still look for the annotation processor directory
+    // we should create it for it.
+    compilerArgs.findAll { !it.startsWith('-') }
+                .each { new File(it).mkdirs() }
+
+    return compilerArgs
   }
 
 

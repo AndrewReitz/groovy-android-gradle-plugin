@@ -72,11 +72,12 @@ buildScan {
 
 ext {
   androidPluginVersion = androidPluginVersion
-  buildToolsVersion = '26.0.2'
-  compileSdkVersion = 26
+  buildToolsVersion = '27.0.0'
+  compileSdkVersion = 27
   spockVersion = '1.1-groovy-2.4'
   androidSupportTestVersion = '1.0.1'
   groovyVersion = '2.4.12'
+  kotlinVersion = '1.1.51'
 }
 
 task prepareRelease(type: Exec) {
